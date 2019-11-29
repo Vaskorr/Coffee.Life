@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/zerno"
+            android:title="Заведения" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/img_552316"
+            android:title="Абонементы" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/fff"
+            android:title="Как это работает" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Поддержка" />
+    </group>
+
+    <item
+        android:id="@+id/comm"
+        android:title="Связь">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Поделиться" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Написать нам" />
+        </menu>
+    </item>
+
+</menu>
