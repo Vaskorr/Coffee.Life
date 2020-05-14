@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,37 +25,33 @@ public class BuyTicket extends AppCompatActivity implements SeekBar.OnSeekBarCha
         setContentView(R.layout.activity_buy_ticket);
         final SeekBar seekBar = (SeekBar)findViewById(R.id.seekBarLifes);
         seekBar.setOnSeekBarChangeListener(this);
-
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         mTextView = findViewById(R.id.Lifes);
 
         roubles = findViewById(R.id.rub);
     }
-
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         life = 200+(seekBar.getProgress()*200);
         mTextView.setText("Выбрано Life'ов: " + life);
         roubles.setText("(" + "RUB " + (double)life/2 + ")");
     }
-
     @Override
     public void onStartTrackingTouch(SeekBar seekBar) {
 
     }
-
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
 
     }
-
     public void Back(View view){
         Intent back = new Intent(this, MainActivity.class);
         String r = "1";
         back.putExtra("r", r);
         startActivity(back);
-    }
-
+    }                            // ВЫХОД В МЕНЮ
     public void Payment(View view){
         Toast.makeText(getApplicationContext(), "Оплата успешно произведена! Сумма:" + (double)life/2 + "RUB", Toast.LENGTH_LONG).show();
-    }
+    }                         // ОПЛАТА ЧЕКА
 }

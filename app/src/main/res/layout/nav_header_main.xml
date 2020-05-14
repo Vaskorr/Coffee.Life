@@ -13,12 +13,13 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <Button
-        android:id="@+id/website"
+        android:id="@+id/website2"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         android:onClick="webClick"
-        android:text="http://coffeelife24.ru"
+        android:text="Some text"
         android:textAllCaps="false"
         android:textColor="@android:color/black" />
 

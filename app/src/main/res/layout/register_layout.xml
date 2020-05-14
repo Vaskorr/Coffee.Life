@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="173dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Регистрация в системе Coffee Life"
+                    android:textSize="26sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Email:*"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/remail"
+                        style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                        android:layout_width="197dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:hint="example@example.ru"
+                        android:inputType="textEmailAddress"
+                        android:textCursorDrawable="@drawable/color_cursor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Пароль:*"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/rpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:hint="Ваш надёжный пароль"
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@drawable/color_cursor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Повтор:*"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/rpass2"
+                        style="@android:style/Widget.Holo.Light.EditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:hint="Повторите пароль"
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@drawable/color_cursor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Фамилия:*"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/lastname"
+                        android:layout_width="157dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:hint="Фамилия"
+                        android:textCursorDrawable="@drawable/color_cursor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Имя:*"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:hint="Ваше имя"
+                        android:textCursorDrawable="@drawable/color_cursor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Отчество:*"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/thirdname"
+                        android:layout_width="233dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:hint="Отчество"
+                        android:textCursorDrawable="@drawable/color_cursor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="99dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Дата рождения:*"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/birth"
+                        android:layout_width="240dp"
+                        android:layout_height="59dp"
+                        android:layout_weight="1"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:hint="dd.mm.yy"
+                        android:textCursorDrawable="@drawable/color_cursor" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/errorlog"
+                    android:layout_width="340dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/fui_bgEmail" />
+
+                <Button
+                    android:id="@+id/login2"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="92dp"
+                    android:background="@drawable/butttt"
+                    android:backgroundTint="#A6706C6C"
+                    android:enabled="true"
+                    android:onClick="Register"
+                    android:selectAllOnFocus="false"
+                    android:shadowRadius="0"
+                    android:text="Регистрация" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
